@@ -12,7 +12,8 @@ banner()
 banner "You seem to have forgor :skull:"
 sleep 3
 
-echo "sudo - Runs commands as the root - sudo <Your command here>"
+if [[ ! $1 ]]; then
+  echo "sudo - Runs commands as the root - sudo <Your command here>"
 echo "mkdir - Makes a directory - mkdir ~/example"
 echo "cp- Copies files to a specific directory - cp <File> <Directory>"
 echo "rm - Removes a specific file - rm <File>"
@@ -41,4 +42,8 @@ echo "man- tells you the functions of certain linux commands if this doesn't hel
 echo "zip/unzip - Zips or Unzips a specified file  - zip/unzip <File>"
 echo "hostname - Shows the name of your host/network  - hostname (Added -i at the end will show the IP adress of your network)"
 echo "useradd/userdel - Adds or Deletes a specific User  - useradd/userdel <Username> then passwd <Password> "
+
+else
+  forgor | grep -i "$1"
+fi
 
