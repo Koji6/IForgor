@@ -10,6 +10,7 @@ You can install Iforgor by doing:
 cd ~/Downloads
 git clone https://github.com/Rack00n/IForgor
 cd IForgor
+chmod u+x install.sh
 ./install.sh
 ~~~
 And you should be good to go!
