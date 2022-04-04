@@ -1,0 +1,44 @@
+#!/bin/bash
+
+banner()
+{
+  echo "<------------------------------------------>"
+  printf "| %-40s |\n" "`date`"
+  echo "|                                          |"
+  printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
+  echo "<------------------------------------------>"
+}
+
+banner "You seem to have forgor :skull:"
+sleep 3
+
+echo "sudo - Runs commands as the root - sudo <Your command here>"
+echo "mkdir - Makes a directory - mkdir ~/example"
+echo "cp- Copies files to a specific directory - cp <File> <Directory>"
+echo "rm - Removes a specific file - rm <File>"
+echo "echo - Moves data into a certain file,and it does a similar thing to print and displays text - echo <Text in quotations> or echo <Text or Command> >> <File>"
+echo "pwd - It shows the current directory - pwd"
+echo "cd - It puts you into the specified directory - cd <Directory> (Cap sensitive)"
+echo "ls - Displays the contents of a specific directory - ls"
+echo "mv - Moves a specific file to a directory - mv <File> <Directory>"
+echo "rmdir - Removes a specific directory - rmdir <Directory>"
+echo "grep - Searches for a specific word in a text document - grep <Word> <Text File>"
+echo "df - Gets a report of disk space usage - df"
+echo "du - Shows how much space a file or directory takes up - du <file/directory> -h"
+echo "head - Used to view the first lines of any text file - head -n <number of lines to read> <file location>"
+echo "tail - Used to view the last few - tail -n <number of lines to read> <file location>"
+echo "diff - Shows the difference between each line in two files - diff <File 1> <File 2>"
+echo "tar - Archives a file  - tar <File Location>"
+echo "chmod - used to change the read, write, and execute permisions of files and directories - chmod u=rwx,g=rx,o=r <File> (u,g and o mean user, group, and other = sets perms r,w,and x stand for read, write, and execute)"
+echo "chown - changes or sets the owner for a specific file  - chown <your username> <File>"
+echo "kill - Kills a running process  - kill <process ID>"
+echo "ping - pings a website  - ping <website>"
+echo "wget - Downloads a file from the internet  - wget <Download Link>"
+echo "uname - Gets information about your system  - uname --help"
+echo "uname - Basically Task manager in the terminal it shows a list of running processes and how much CPU each process uses  - top"
+echo "history - Shows your command history - history"
+echo "man- tells you the functions of certain linux commands if this doesn't help  - man <Command name>"
+echo "zip/unzip - Zips or Unzips a specified file  - zip/unzip <File>"
+echo "hostname - Shows the name of your host/network  - hostname (Added -i at the end will show the IP adress of your network)"
+echo "useradd/userdel - Adds or Deletes a specific User  - useradd/userdel <Username> then passwd <Password> "
+
