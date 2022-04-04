@@ -44,6 +44,6 @@ echo "hostname - Shows the name of your host/network  - hostname (Added -i at th
 echo "useradd/userdel - Adds or Deletes a specific User  - useradd/userdel <Username> then passwd <Password> "
 
 else
-  forgor | grep -i "$1"
+  iforgor | grep -i "$1"
 fi
 
