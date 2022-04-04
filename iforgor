@@ -15,7 +15,7 @@ sleep 3
 if [[ ! $1 ]]; then
   echo "sudo - Runs commands as the root - sudo <Your command here>"
 echo "mkdir - Makes a directory - mkdir ~/example"
-echo "cp- Copies files to a specific directory - cp <File> <Directory>"
+echo "cp- Copy files to a specific directory - cp <File> <Directory>"
 echo "rm - Removes a specific file - rm <File>"
 echo "echo - Moves data into a certain file,and it does a similar thing to print and displays text - echo <Text in quotations> or echo <Text or Command> >> <File>"
 echo "pwd - It shows the current directory - pwd"
